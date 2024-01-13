@@ -1,14 +1,14 @@
 
-function generateResourcePositionsArray() {
-    const positionsArray = [];
+function generateResourceValuesArray() {
+    const valuesArray = [];
     for (let i = 2; i < 13; i++) {
-        positionsArray.push(i);
+        valuesArray.push(i);
     }
     for (let j = 2; j < 13; j++) {
-        positionsArray.push(j);
+        valuesArray.push(j);
     }
-    positionsArray.push(0);
-    return positionsArray
+    valuesArray.push(0);
+    return valuesArray
 }
 
 function generateResourceTypesArray() {
@@ -38,17 +38,17 @@ function generateResourceTypesArray() {
 }
 
 
-function generateRandomPosition(positonsArray) {
+function generateRandomResurceValue(valuesArray) {
 
-    const randomIndex = Math.floor(Math.random() * positonsArray.length);
-    let randomValue = positonsArray[randomIndex];
+    const randomIndex = Math.floor(Math.random() * valuesArray.length);
+    let randomValue = valuesArray[randomIndex];
 
-    console.log(positonsArray);
-    positonsArray.splice(randomIndex, 1);
+    console.log(valuesArray);
+    valuesArray.splice(randomIndex, 1);
     return randomValue
 }
 
-function generateRandomType(typesArray) {
+function generateRandomResurceType(typesArray) {
 
     const randomIndex = Math.floor(Math.random() * typesArray.length);
     let randomValue = typesArray[randomIndex];
@@ -62,14 +62,14 @@ function randomizeResourceTile() {
 
     let tileArray = []
 
-    const positionsArray = generateResourcePositionsArray()
+    const valuesArray = generateResourceValuesArray()
     const typesArray = generateResourceTypesArray()
 
     for (let i = 0; i <= 18; i++) {
         //Generate tile with position
-        let tilePosition = generateRandomPosition(positionsArray)
-        let titleType = generateRandomType(typesArray)
-        let resourceTile = new resurceTile(titleType, tilePosition);
+        let tileValue = generateRandomResurceValue(valuesArray)
+        let titleType = generateRandomResurceType(typesArray)
+        let resourceTile = new resurceTile(titleType, tileValue);
         tileArray.push(resourceTile);
     }
     console.log(tileArray)
@@ -83,15 +83,15 @@ function setResourcerTiles() {
         const tileBox = document.getElementById(`box${i+1}`)
         const childParagraphs = tileBox.querySelectorAll("p");
         childParagraphs[0].textContent = resurceTilesValues[i].type;
-        childParagraphs[1].textContent = resurceTilesValues[i].position;
+        childParagraphs[1].textContent = resurceTilesValues[i].value;
         
     }
     alert('Randomization done!');
 }
 
 class resurceTile {
-    constructor(type, position) {
+    constructor(type, value) {
         this.type = type;
-        this.position = position;
+        this.value = value;
     }
 }
