@@ -2,8 +2,22 @@
 <html>
 
   <head>
-
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Katan Randomizer</title>
     <style>
+/* Example media queries to apply the styles based on screen size */
+@media screen and (max-width: 1200px) {
+  .wholeDiv{
+transform: scale(0.7); /* Adjust the scale factor as needed */
+    transform-origin: center center;
+    border: 15px solid rgb(255, 157, 0); /* Just for visualization */
+    outline: 3px solid black;
+}
+}
+.wholeDiv{
+      border: 15px solid rgb(255, 157, 0); /* Just for visualization */
+}
       .containerRow1 {
         display: flex;
         align-items: center;
@@ -126,17 +140,16 @@
 	top:1px;
 }
 h1 {
-margin: 5px;
-padding: 5px;
+margin: 3px;
+padding: 3px;
 }
 
 h2{
-margin: 5px;
-padding: 5px;
+margin: 3px;
+padding: 3px;
 }
   
     </style>
-
 <script>
   window.onload = function() {
     setBoard()
@@ -146,6 +159,7 @@ padding: 5px;
   </head>
 
   <body>
+    <div class="wholeDiv" id="wholeDiv">
     <div class="titleBox" id="titleBox">
       <h1>KATAN</h1>
       <h2>RANDOMIZER</h2>
@@ -288,8 +302,6 @@ padding: 5px;
         </div>
       </div>
     </div>
-
-
+  </div>
   </body>
-
 </html>
