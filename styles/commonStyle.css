@@ -1,0 +1,172 @@
+@media screen and (max-width: 1200px) {
+    .wholeDiv {
+      transform: scale(0.7);
+      /* Adjust the scale factor as needed */
+      transform-origin: center center;
+      border: 15px solid rgb(255, 157, 0);
+      /* Just for visualization */
+      outline: 3px solid black;
+    }
+  }
+
+  .wholeDiv {
+    border: 15px solid rgb(255, 157, 0);
+    /* Just for visualization */
+  }
+
+  
+  .titleBox {
+    padding: 1px;
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'YourFontName';
+    color: #e8d617;
+    font-size: 50px;
+    /* Adding a black border around the text */
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  }
+
+  @font-face {
+    font-family: 'YourFontName';
+    src: url('public/fonts/Garamond-MT-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .buttonsBox {
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .generateButton {
+    background-color: #44c767;
+    border-radius: 28px;
+    margin: 10px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 27px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+  }
+
+  .generateButton1 {
+    background-color: #c74444;
+    border-radius: 28px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 27px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+  }
+
+  .generateButton2 {
+    background-color: #bed83b;
+    border-radius: 28px;
+    border: 1px solid #ab5818;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 27px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+  }
+
+  .generateButton:hover {
+    background-color: #5cbf2a;
+  }
+
+  .generateButton:active {
+    position: relative;
+    top: 1px;
+  }
+
+  h1 {
+    margin: 3px;
+    padding: 3px;
+  }
+
+  h2 {
+    margin: 3px;
+    padding: 3px;
+  }
+
+  *,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+}
+
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.toggle-switch {
+  display: inline-block;
+  background: #ccc;
+  border-radius: 16px;
+  width: 58px;
+  height: 32px;
+  position: relative;
+  vertical-align: middle;
+  transition: background 0.25s;
+}
+.toggle-switch:before, .toggle-switch:after {
+  content: "";
+}
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background: #56c080;
+}
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 30px;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.toggle-label {
+  margin-left: 5px;
+  position: relative;
+  top: 2px;
+}
+  
