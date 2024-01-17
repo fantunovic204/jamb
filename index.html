@@ -2,35 +2,10 @@
 <html>
   <head>
     <title>Jamb</title>
+    <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="styles\style.css">
   </head>
 <body>
-  <style type="text/css">
-    .tg  {border-collapse:collapse;border-spacing:0;}
-    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-      overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg .tg-u01j{background-color:#34cdf9;border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
-    .tg .tg-hyan{background-color:#34cdf9;text-align:left;vertical-align:top}
-    .tg .tg-okjk{background-color:#34cdf9;border-color:inherit;font-size:100%;font-weight:bold;text-align:left;vertical-align:top}
-    .tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
-    .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-    .tg .tg-i1q2{background-color:#34cdf9;border-color:inherit;text-align:left;vertical-align:top}
-    .tg .tg-xam4{border-color:inherit;font-size:100%;font-weight:bold;text-align:left;vertical-align:top}
-    .tg .tg-i6jf{background-color:#34cdf9;font-size:100%;font-weight:bold;text-align:left;vertical-align:top}
-
-    .image{
-      width: 5%;
-      height: 5%;
-      padding: 15px;
-    }
-
-    .diceContainer{
-      padding-right: 15px;
-      padding-bottom: 15px;
-      padding-top: 15px;
-    }
-    </style>
     <table class="tg" style="table-layout: fixed; width: 677px">
     <colgroup>
     <col style="width: 121.2px">
@@ -165,19 +140,26 @@
     </tbody>
     </table>
 <div class="diceContainer">
-    <img class="image" src="images/dice-six-faces-one.png" alt="Description of the image" id="die1">
-    <img class="image" src="images/dice-six-faces-two.png" alt="Description of the image" id="die2">
-    <img class="image" src="images/dice-six-faces-three.png" alt="Description of the image" id="die3">
-    <img class="image" src="images/dice-six-faces-four.png" alt="Description of the image" id="die4">
-    <img class="image" src="images/dice-six-faces-five.png" alt="Description of the image" id="die5">
-    <img class="image" src="images/dice-six-faces-six.png" alt="Description of the image" id="die6">
+    <img class="image" src="images/dice-six-faces-one.png" alt="Description of the image" id="die1" onclick="addUpDiceAfterRole(id)">
+    <img class="image" src="images/dice-six-faces-two.png" alt="Description of the image" id="die2" onclick="addUpDiceAfterRole(id)">
+    <img class="image" src="images/dice-six-faces-three.png" alt="Description of the image" id="die3" onclick="addUpDiceAfterRole(id)">
+    <img class="image" src="images/dice-six-faces-four.png" alt="Description of the image" id="die4" onclick="addUpDiceAfterRole(id)">
+    <img class="image" src="images/dice-six-faces-five.png" alt="Description of the image" id="die5" onclick="addUpDiceAfterRole(id)">
+    <img class="image" src="images/dice-six-faces-six.png" alt="Description of the image" id="die6" onclick="addUpDiceAfterRole(id)">
 
-    <button class="roleDiceButton" id="roleDiceButton" onclick="roleDice()">KOCKE</button>
+    <button class="roleDiceButton" id="roleDiceButton" onclick="rollDice()">Baci Kocke</button>
+    <button class="roleDiceButton" id="roleDiceButton" onclick="rollDice()">Baci Opet</button>
+    <button class="finishRollingButton" id="finishRollingButton" onclick="rollDice()">Prekini bacanje</button>
+
+    <p class="diceThrowCounter" id="diceThrowCounter"></p>
   </div>
+
+
+
 
   
   <script src="roleDice.js">
-    document.getElementById("roleDiceButton").addEventListener("click", roleDice());
+    document.getElementById("roleDiceButton").addEventListener("click", rollDice());
   </script>
 
 </body>
