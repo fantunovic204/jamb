@@ -1,418 +1,185 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Jamb</title>
+  </head>
+<body>
+  <style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-u01j{background-color:#34cdf9;border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+    .tg .tg-hyan{background-color:#34cdf9;text-align:left;vertical-align:top}
+    .tg .tg-okjk{background-color:#34cdf9;border-color:inherit;font-size:100%;font-weight:bold;text-align:left;vertical-align:top}
+    .tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+    .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+    .tg .tg-i1q2{background-color:#34cdf9;border-color:inherit;text-align:left;vertical-align:top}
+    .tg .tg-xam4{border-color:inherit;font-size:100%;font-weight:bold;text-align:left;vertical-align:top}
+    .tg .tg-i6jf{background-color:#34cdf9;font-size:100%;font-weight:bold;text-align:left;vertical-align:top}
 
-<head>
-  <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <title>Katan Randomizer</title>
+    .image{
+      width: 5%;
+      height: 5%;
+      padding: 15px;
+    }
 
-  <!-- Link to the external CSS file -->
-  <link rel="stylesheet" href="styles\commonStyle.css">
-  <link rel="stylesheet" href="styles\standardBoardStyle.css">
-  <link rel="stylesheet" href="styles\expansionBoardStyle.css">
-  <script>
+    .diceContainer{
+      padding-right: 15px;
+      padding-bottom: 15px;
+      padding-top: 15px;
+    }
+    </style>
+    <table class="tg" style="table-layout: fixed; width: 677px">
+    <colgroup>
+    <col style="width: 121.2px">
+    <col style="width: 111.2px">
+    <col style="width: 111.2px">
+    <col style="width: 111.2px">
+    <col style="width: 111.2px">
+    <col style="width: 111.2px">
+    </colgroup>
+    <thead>
+      <tr>
+        <th class="tg-okjk">IGRA</th>
+        <th class="tg-u01j"><span style="font-weight:bold">↓</span></th>
+        <th class="tg-u01j">↑↓</th>
+        <th class="tg-u01j">↑</th>
+        <th class="tg-u01j">Najava</th>
+        <th class="tg-u01j">JAMB</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tg-fymr">1</td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky" rowspan="6"></td>
+      </tr>
+      <tr>
+        <td class="tg-fymr">2</td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+      </tr>
+      <tr>
+        <td class="tg-fymr">3</td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+      </tr>
+      <tr>
+        <td class="tg-fymr">4</td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+      </tr>
+      <tr>
+        <td class="tg-fymr">5</td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+      </tr>
+      <tr>
+        <td class="tg-fymr">6</td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+      </tr>
+      <tr>
+        <td class="tg-u01j">Za zbir više od 60 - Bonus 30</td>
+        <td class="tg-i1q2"></td>
+        <td class="tg-i1q2"></td>
+        <td class="tg-i1q2"></td>
+        <td class="tg-i1q2"></td>
+        <td class="tg-i1q2"></td>
+      </tr>
+      <tr>
+        <td class="tg-fymr">MAX</td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky" rowspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-fymr">MIN</td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+      </tr>
+      <tr>
+        <td class="tg-u01j">MAX - MIN x broj na 1</td>
+        <td class="tg-i1q2"></td>
+        <td class="tg-i1q2"></td>
+        <td class="tg-i1q2"></td>
+        <td class="tg-i1q2"></td>
+        <td class="tg-i1q2"></td>
+      </tr>
+      <tr>
+        <td class="tg-xam4">SKALA<br>I=66 II=56 II=46</td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky" rowspan="4"></td>
+      </tr>
+      <tr>
+        <td class="tg-fymr">FUL<br>Zbir + 30</td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+      </tr>
+      <tr>
+        <td class="tg-fymr">POKER<br>Zbir + 40</td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+      </tr>
+      <tr>
+        <td class="tg-fymr">JAMB<br>Zbir + 50</td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+        <td class="tg-0pky"></td>
+      </tr>
+      <tr>
+        <td class="tg-i6jf">SKALA + FUL + POKER + JAMB</td>
+        <td class="tg-hyan"></td>
+        <td class="tg-hyan"></td>
+        <td class="tg-hyan"></td>
+        <td class="tg-hyan"></td>
+        <td class="tg-hyan"></td>
+      </tr>
+    </tbody>
+    </table>
+<div class="diceContainer">
+    <img class="image" src="images/dice-six-faces-one.png" alt="Description of the image" id="die1">
+    <img class="image" src="images/dice-six-faces-two.png" alt="Description of the image" id="die2">
+    <img class="image" src="images/dice-six-faces-three.png" alt="Description of the image" id="die3">
+    <img class="image" src="images/dice-six-faces-four.png" alt="Description of the image" id="die4">
+    <img class="image" src="images/dice-six-faces-five.png" alt="Description of the image" id="die5">
+    <img class="image" src="images/dice-six-faces-six.png" alt="Description of the image" id="die6">
 
+    <button class="roleDiceButton" id="roleDiceButton" onclick="roleDice()">KOCKE</button>
+  </div>
 
-    window.onload = function () {
-      setStandardBoard()
-    };
+  
+  <script src="roleDice.js">
+    document.getElementById("roleDiceButton").addEventListener("click", roleDice());
   </script>
 
-</head>
-
-<body>
-  <div class="wholeDiv" id="wholeDiv">
-    <div class="titleBox" id="titleBox">
-      <h1>KATAN</h1>
-      <h2>RANDOMIZER</h2>
-    </div>
-    <div class="buttonsBox" id="buttonsBox">
-      <button class="generateButton" id="generateStandardButton" onclick="setStandardBoard()" style="display: block;">Generate</button>
-      <button class="generateButton" id="generateExpansionButton" onclick="setExpansionBoard()" style="display: none;">Generate</button>
-      <label class="toggle">
-        <input class="toggle-checkbox" type="checkbox" id="expansionCheckbox">
-        <div class="toggle-switch"></div>
-        <span class="toggle-label">5 to 6 player expansion</span>
-      </label>
-    </div>
-
-    <script src="generateStandardBoard.js">
-      document.getElementById("generateStandardButton").addEventListener("click", setStandardBoard());
-    </script>
-
-    <script src="generateExpansionBoard.js">
-      document.getElementById("generateExpansionButton").addEventListener("click", setExpansionBoard());
-    </script>
-
-    <script>
-      //Toogle function
-      function toggleChange() {
-        let checkbox = document.getElementById('expansionCheckbox');
-        let standardGenerateButton = document.querySelector('#generateStandardButton');
-        let expansionGenerateButton = document.querySelector('#generateExpansionButton');
-        let standardBoard = document.querySelector('#wholeStandardBoard');
-        let expansionBoard = document.querySelector('#wholeExpansionBoard');
-        //expansion is turned on
-        if (checkbox.checked) {
-          expansionBoard.style.display = 'block';
-          standardBoard.style.display = 'none';
-          expansionGenerateButton.style.display = 'block';
-          standardGenerateButton.style.display = 'none';
-          document.getElementById("expansionCheckbox").addEventListener("change", setExpansionBoard());
-          //espansion is turned off
-        } else {
-          expansionBoard.style.display = 'none';
-          standardBoard.style.display = 'block';
-          expansionGenerateButton.style.display = 'none';
-          standardGenerateButton.style.display = 'block';
-          document.getElementById("expansionCheckbox").addEventListener("change", setStandardBoard());
-        }
-      }
-      document.getElementById('expansionCheckbox').addEventListener('change', toggleChange);
-    </script>
-
-    <div class="wholeStandardBoard" id="wholeStandardBoard">
-      <div class="containerRow1">
-
-        <div class="box" id="box1">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-
-        <div class="box" id="box2">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-
-        <div class="box" id="box3">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="containerRow2">
-        <div class="box" id="box4">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="box5">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="box6">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="box7">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="containerRow3">
-        <div class="box" id="box8">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="box9">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="box10">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="box11">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="box12">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="containerRow4">
-        <div class="box" id="box13">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="box14">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="box15">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="box16">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="containerRow5">
-        <div class="box" id="box17">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="box18">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="box19">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--------------------------->
-
-    <div class="wholeExpansionBoard" id="wholeExpansionBoard">
-      <div class="expansionContainerRow1">
-
-        <div class="box" id="expansionBox1">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-
-        <div class="box" id="expansionBox2">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-
-        <div class="box" id="expansionBox3">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="expansionContainerRow2">
-        <div class="box" id="expansionBox4">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox5">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox6">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox7">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="expansionContainerRow3">
-        <div class="box" id="expansionBox8">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox9">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox10">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox11">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox12">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="expansionContainerRow4">
-        <div class="box" id="expansionBox13">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox14">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox15">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox16">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox17">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox18">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="expansionContainerRow5">
-        <div class="box" id="expansionBox19">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox20">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox21">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox22">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox23">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="expansionContainerRow6">
-        <div class="box" id="expansionBox24">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox25">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox26">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox27">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="expansionContainerRow7">
-        <div class="box" id="expansionBox28">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox29">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-        <div class="box" id="expansionBox30">
-          <div class="container">
-            <img class="image" alt="Description of the image">
-            <p class="text-overlay"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
-
 </html>
+
